@@ -13,11 +13,14 @@ dependencies = [
 ]
 
 [tool.poetry.scripts]
-start = "django_rest_starter.tasks:start"
+start = "django_rest_starter.hello:greet"
 
 [tool.poetry]
 packages = [{include = "django_rest_starter", from = "src"}]
 
+[tool.poe.tasks]
+dev = "python ./src/manage.py runserver"
+manage = "python ./src/manage.py"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
