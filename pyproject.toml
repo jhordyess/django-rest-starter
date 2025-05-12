@@ -15,12 +15,21 @@ dependencies = [
 [tool.poetry.scripts]
 start = "django_rest_starter.hello:greet"
 
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.3.2"
+
 [tool.poetry]
 packages = [{include = "django_rest_starter", from = "src"}]
 
 [tool.poe.tasks]
 dev = "python ./src/manage.py runserver"
 manage = "python ./src/manage.py"
+lint = "autopep8 --in-place --aggressive --aggressive --recursive src"
+
+[tool.autopep8]
+max_line_length = 100
+indent-size = 2
+aggressive = 2
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
