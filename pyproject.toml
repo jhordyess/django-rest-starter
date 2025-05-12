@@ -13,10 +13,7 @@ dependencies = [
 ]
 
 [tool.poetry.scripts]
-start = "django_rest_starter.hello:greet"
-
-[tool.poetry.group.dev.dependencies]
-invoke = "^2.2.0"
+start = "django_rest_starter.tasks:start"
 
 [tool.poetry]
 packages = [{include = "django_rest_starter", from = "src"}]
