@@ -1,0 +1,19 @@
+[project]
+name = "django-rest-starter"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Jhordy Gavinchu",email = "dev@jhordyess.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "django_rest_starter", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
