@@ -16,9 +16,9 @@ dependencies = [
 autopep8 = "^2.3.2"
 
 [tool.poe.tasks]
-dev = "python ./src/manage.py runserver"
-manage = "python ./src/manage.py"
-format = "autopep8 --in-place --aggressive --aggressive --recursive src"
+dev = "python ./manage.py runserver"
+manage = "python ./manage.py"
+format = "autopep8 --in-place --aggressive --aggressive --recursive api"
 
 [tool.autopep8]
 max_line_length = 100
