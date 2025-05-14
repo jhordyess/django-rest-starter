@@ -15,6 +15,9 @@ dependencies = [
 [tool.poetry.group.dev.dependencies]
 autopep8 = "^2.3.2"
 
+[tool.poetry]
+package-mode = false
+
 [tool.poe.tasks]
 dev = "python ./manage.py runserver"
 manage = "python ./manage.py"
