@@ -1,10 +1,7 @@
 [project]
 name = "django-rest-starter"
-version = "0.1.0"
+version = "0.0.0"
 description = ""
-authors = [
-    {name = "Jhordy Gavinchu",email = "dev@jhordyess.com"}
-]
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
